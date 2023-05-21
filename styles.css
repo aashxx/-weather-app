@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://source.unsplash.com/random/1600x900/?city/") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  width: 50vw;
+  opacity: 0.8;
+  font-family: "Titillium Web", sans-serif;
+  flex-direction: column;
+  margin: 1em;
+  padding: 2em;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1em;
+}
+.search .search-bar {
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background-color: gray;
+  opacity: 1;
+  border: none;
+  outline: none;
+  color: white;
+  background: rgba(124, 124, 124, 0.168627451);
+  font-size: 105%;
+  font-family: "Titillium Web", sans-serif;
+  width: 90%;
+}
+.search .search-btn {
+  border-radius: 50%;
+  margin: 0.5em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  background-color: rgba(124, 124, 124, 0.168627451);
+  color: white;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+.search .search-btn:hover {
+  background-color: rgba(124, 124, 124, 0.4196078431);
+}
+
+.weather h2 {
+  font-size: 2.6rem;
+}
+.weather .temp {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.weather .humid, .weather .wind, .weather .max-temp, .weather .min-temp {
+  font-size: 1.5rem;
+}
+.weather .min-temp {
+  margin-top: 50px;
+}
+.weather .wind {
+  margin-bottom: 1em;
+}
+
+footer {
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  align-self: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 1em;
+  margin-bottom: 5px;
+  letter-spacing: 2;
+}
+footer span {
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 740px) {
+  .container {
+    width: auto;
+    padding: 1em;
+  }
+  .search {
+    margin-top: 0;
+  }
+  .weather h2 {
+    font-size: 1.5rem;
+  }
+  .weather .temp {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .weather .humid, .weather .wind, .weather .max-temp, .weather .min-temp {
+    font-size: 1rem;
+  }
+  .weather .min-temp {
+    margin-top: 50px;
+  }
+  .weather .wind {
+    margin-bottom: 0.2em;
+  }
+}/*# sourceMappingURL=styles.css.map */
